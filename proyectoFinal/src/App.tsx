@@ -1,11 +1,13 @@
 
-function App() {
 
-  return (
-    <>
-    <div><p>Proyecto Final</p></div>
-    </>
-  )
+export const App = () => {
+
+    return (
+      <>
+        <div>
+          <p> Proyecto Final</p>
+        </div>
+      </>
+    )
 }
 
-export default App
