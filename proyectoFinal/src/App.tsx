@@ -1,11 +1,11 @@
-
-function App() {
-
+import React from 'react';
+import Empresas from './Screen/Empresas/Empresas'
+const App = () => {
   return (
-    <>
-    <div><p>Proyecto Final</p></div>
-    </>
-  )
-}
+    <div>
+      <Empresas/>
+    </div>
+  );
+};
 
-export default App
+export default App;
