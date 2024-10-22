@@ -1,11 +1,13 @@
+import React from 'react';
+import MainComponent from './components/MainComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-    <div><p>Proyecto Final</p></div>
-    </>
-  )
-}
+    <div>
+      <MainComponent />
+    </div>
+  );
+};
 
-export default App
+export default App;
