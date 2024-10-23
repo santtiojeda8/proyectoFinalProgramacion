@@ -1,0 +1,19 @@
+.Sucursal {
+    padding: 20px;
+  }
+  
+  .popupAgregarSucursal {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .popupAgregarSucursal h2 {
+    margin-top: 0;
+  }
+  

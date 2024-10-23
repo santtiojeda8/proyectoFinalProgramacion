@@ -1,0 +1,38 @@
+.Direccion {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Direccion__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Direccion__input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.Direccion__grupo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Direccion__grupo > div {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+.Direccion__titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+

@@ -1,9 +1,10 @@
 import React from 'react';
 import Empresas from './Screen/Empresas/Empresas'
+import Contenedor from './Screen/Empresas/Contenedor';
 const App = () => {
   return (
     <div>
-      <Empresas/>
+      <Contenedor/>
     </div>
   );
 };
