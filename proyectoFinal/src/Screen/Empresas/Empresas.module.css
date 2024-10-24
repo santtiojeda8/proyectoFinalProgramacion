@@ -1,15 +1,57 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 1; /* Detrás del popup */
+}
 .popupEditar,
-.popupVerDatos {
+.popupVerDatos,.popupAgregar {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #f3ed97;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
+.botonAgregar {
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(183, 240, 207);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+.tituloEmpresa{
+padding: 10%;
+}
+
+.botonAgregar{
+  width: 10vw;
+  height: 5vh;
+background-color: rgb(183, 240, 207);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.izquierda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .popupEditar {
   width: 500px;
@@ -17,4 +59,11 @@
 
 .popupVerDatos {
   width: 300px;
+}
+input, label {
+  margin-bottom: 10px;
+  display: block;
+}
+button {
+  cursor: pointer;
 }

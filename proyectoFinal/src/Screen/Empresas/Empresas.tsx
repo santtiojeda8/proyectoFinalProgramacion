@@ -85,7 +85,8 @@ const Empresas: React.FC<Props> = ({ setEmpresaSeleccionada }) => {
   return (
     <div className={styles.contenedor}>
       <div className={styles.izquierda}>
-        <button onClick={handleAgregarEmpresa}>Agregar Empresa</button>
+        <h2 className={styles.tituloEmpresa}>Empresas</h2>
+        <button className={styles.botonAgregar} onClick={handleAgregarEmpresa}>Agregar Empresa</button>
         {mostrarPopupAgregar && (
           <div className={styles.popupAgregar}>
             <h2>Agregar Empresa</h2>
@@ -115,6 +116,9 @@ const Empresas: React.FC<Props> = ({ setEmpresaSeleccionada }) => {
           </div>
         ))}
       </div>
+      {(mostrarPopupAgregar || mostrarPopupVerDatos || mostrarPopupEditar) && (
+          <div className={styles.overlay}></div>
+        )}
       {mostrarPopupVerDatos && empresaSeleccionada && (
         <div className={styles.popupVerDatos}>
           <h2>Ver Datos</h2>
